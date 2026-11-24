@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard – Damanhour University Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="dashboard-page">
+
+  <!-- Sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <a href="index.html" class="logo">
+      <i class="fa-solid fa-graduation-cap"></i>
+      <span>DU <strong>Portal</strong></span>
+    </a>
+
+    <nav class="sidebar-nav">
+      <a href="dashboard.html" class="active"><i class="fa-solid fa-gauge-high"></i> Dashboard</a>
+      <a href="courses.html"><i class="fa-solid fa-book-open"></i> My Courses</a>
+      <a href="schedule.html"><i class="fa-solid fa-calendar-days"></i> Schedule</a>
+      <a href="grades.html"><i class="fa-solid fa-chart-line"></i> Grades</a>
+      <a href="hospital.html"><i class="fa-solid fa-hospital"></i> Hospital</a>
+      <a href="announcements.html"><i class="fa-solid fa-bullhorn"></i> Announcements</a>
+      <a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+    </nav>
+    <a href="#" class="logout-btn" id="logoutBtn">
+      <i class="fa-solid fa-right-from-bracket"></i> Logout
+    </a>
+  </aside>
+
+  <!-- Main -->
+  <main class="dashboard-main">
+    <header class="dash-header">
+      <button class="hamburger dash-toggle" id="dashToggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div>
+        <h1>Welcome back, <span id="userName">Student</span> 👋</h1>
+        <p>Here's what's happening at Damanhour University today.</p>
+      </div>
+      <div class="dash-user">
+        <div class="notification"><i class="fa-solid fa-bell"></i><span class="dot"></span></div>
+        <div class="avatar">S</div>
+      </div>
+    </header>
+
+    <!-- Stats cards -->
+    <section class="dash-stats">
+      <div class="dash-stat-card">
+        <div class="dash-stat-icon blue"><i class="fa-solid fa-book-open"></i></div>
+        <div>
+          <h3>6</h3>
+          <p>Active Courses</p>
+        </div>
+      </div>
+      <div class="dash-stat-card">
+        <div class="dash-stat-icon green"><i class="fa-solid fa-chart-line"></i></div>
+        <div>
+          <h3>3.7</h3>
+          <p>Current GPA</p>
+        </div>
+      </div>
+      <div class="dash-stat-card">
+        <div class="dash-stat-icon orange"><i class="fa-solid fa-calendar-check"></i></div>
+        <div>
+          <h3>92%</h3>
+          <p>Attendance</p>
+        </div>
+      </div>
+      <div class="dash-stat-card">
+        <div class="dash-stat-icon purple"><i class="fa-solid fa-bullhorn"></i></div>
+        <div>
+          <h3>4</h3>
+          <p>New Announcements</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid -->
+    <section class="dash-grid">
+      <div class="dash-card">
+        <div class="dash-card-header">
+          <h3>Upcoming Schedule</h3>
+          <a href="#">View all</a>
+        </div>
+        <ul class="schedule-list">
+          <li><span class="time">09:00</span>
+            <div><strong>Data Structures</strong>
+              <p>Dr. Ahmed – Hall A</p>
+            </div>
+          </li>
+          <li><span class="time">11:00</span>
+            <div><strong>Software Engineering</strong>
+              <p>Dr. Mona – Hall B</p>
+            </div>
+          </li>
+          <li><span class="time">13:00</span>
+            <div><strong>Database Systems</strong>
+              <p>Dr. Khaled – Lab 3</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="dash-card">
+        <div class="dash-card-header">
+          <h3>Recent Grades</h3>
+          <a href="#">View all</a>
+        </div>
+        <ul class="grades-list">
+          <li><span>Software Engineering</span><strong class="grade-a">A</strong></li>
+          <li><span>Database Systems</span><strong class="grade-a">A-</strong></li>
+          <li><span>Data Structures</span><strong class="grade-b">B+</strong></li>
+          <li><span>Operating Systems</span><strong class="grade-b">B</strong></li>
+        </ul>
+      </div>
+
+      <div class="dash-card wide">
+        <div class="dash-card-header">
+          <h3>Latest Announcements</h3>
+          <a href="#">View all</a>
+        </div>
+        <ul class="announce-list">
+          <li>
+            <span class="announce-tag academic">Academic</span>
+            <div><strong>Final exams schedule is now available</strong>
+              <p>Check your exam dates and rooms.</p>
+            </div>
+            <span class="announce-time">2h ago</span>
+          </li>
+          <li>
+            <span class="announce-tag medical">Medical</span>
+            <div><strong>Free health check campaign this week</strong>
+              <p>At the University Hospital, 9 AM – 3 PM.</p>
+            </div>
+            <span class="announce-time">1d ago</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>

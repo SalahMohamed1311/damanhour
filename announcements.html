@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Announcements – DU Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body class="dashboard-page">
+  <aside class="sidebar" id="sidebar">
+    <a href="index.html" class="logo"><i class="fa-solid fa-graduation-cap"></i><span>DU <strong>Portal</strong></span></a>
+    <nav class="sidebar-nav">
+      <a href="dashboard.html"><i class="fa-solid fa-gauge-high"></i> Dashboard</a>
+      <a href="courses.html"><i class="fa-solid fa-book-open"></i> My Courses</a>
+      <a href="schedule.html"><i class="fa-solid fa-calendar-days"></i> Schedule</a>
+      <a href="grades.html"><i class="fa-solid fa-chart-line"></i> Grades</a>
+      <a href="hospital.html"><i class="fa-solid fa-hospital"></i> Hospital</a>
+      <a href="announcements.html" class="active"><i class="fa-solid fa-bullhorn"></i> Announcements</a>
+      <a href="settings.html"><i class="fa-solid fa-gear"></i> Settings</a>
+    </nav>
+    <a href="#" class="logout-btn" id="logoutBtn"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+  </aside>
+
+  <main class="dashboard-main">
+    <header class="dash-header">
+      <div><h1>Announcements</h1><p>Stay updated with university news.</p></div>
+    </header>
+    <section class="dash-grid">
+      <div class="dash-card wide">
+        <ul class="announce-list">
+          <li>
+            <span class="announce-tag academic">Academic</span>
+            <div><strong>Final exams schedule is now available</strong><p>Please check the exams page for your dates and rooms.</p></div>
+            <span class="announce-time">2h ago</span>
+          </li>
+          <li>
+            <span class="announce-tag medical">Medical</span>
+            <div><strong>Free health check campaign this week</strong><p>At the University Hospital, 9 AM – 3 PM. Bring your ID.</p></div>
+            <span class="announce-time">1d ago</span>
+          </li>
+          <li>
+            <span class="announce-tag academic">General</span>
+            <div><strong>Tuition fees payment deadline extended</strong><p>New deadline is next Thursday.</p></div>
+            <span class="announce-time">3d ago</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>
